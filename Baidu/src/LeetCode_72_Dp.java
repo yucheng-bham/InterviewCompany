@@ -1,5 +1,5 @@
 /**
- * The class is
+ * The class is dynamic programming.
  *
  * @author YuCheng
  * @version 2019/12/17 21:03
