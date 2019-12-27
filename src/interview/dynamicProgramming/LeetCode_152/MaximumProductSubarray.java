@@ -18,17 +18,18 @@ class Solution {
         max[0] = A[0];
         int[] min = new int[n];
         min[0] = A[0];
-        // int maxhere = 0;
-        // int minhere = 0;
-        // int max = Integer.MIN_VALUE;
+         int maxhere = 0;
+         int minhere = 0;
+         int res = Integer.MIN_VALUE;
         for (int i = 1; i < n; i++) {
-            max[i] = Math.max(max[i - 1] * A[i], min[i - 1] * A[i]);
-            min[i] = Math.min(max[i - 1] * A[i], min[i - 1] * A[i]);
-
+            max[i] = Math.max(A[i], Math.max(max[i - 1] * A[i], min[i - 1] * A[i]));
+            min[i] = Math.min(A[i], Math.min(max[i - 1] * A[i], min[i - 1] * A[i]));
+            res = Math.max(max[i], res);
         }
-        return max[n - 1];
+        return res;
     }
-}/*
+}
+/*
 class Solution{
     public int maxProduct(int[] nums) {
         int max = nums[0];
