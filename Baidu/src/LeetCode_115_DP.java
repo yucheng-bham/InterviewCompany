@@ -29,13 +29,14 @@ public class LeetCode_115_DP {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-//        String strS = "rabbbit";
-//        String strS = "tibbar";
-//        String strS = "rabbbitXX";
-        String strS = "ab";
-        String strT = "aab";
+        String strS = "rabbbit";
+        String strT = "rabbit";
+//        String strT = "it";
+//        String strS = "ab";
+//        String strT = "aab";
 
         int numDistinct = solution.numDistinct(strS, strT);
-        System.out.println(numDistinct);
+        System.out.println(numDistinct); // ans = 3. namely There are 3 rabbit
+                                         // of StrT in the StrS rabbbit
     }
 }

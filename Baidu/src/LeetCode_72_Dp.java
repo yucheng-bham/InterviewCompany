@@ -1,5 +1,5 @@
 /**
- * The class is
+ * The class is dynamic programming.
  *
  * @author YuCheng
  * @version 2019/12/17 21:03
@@ -7,7 +7,10 @@
 public class LeetCode_72_Dp {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int minDistance = solution.minDistance("horse", "ros");
+//        int minDistance = solution.minDistance("horse", "ros");
+        int minDistance = solution.minDistance("rs", "ros");
+//        int minDistance = solution.minDistance("horse", "abc");
+
         System.out.println(minDistance);
     }
 }
@@ -34,13 +37,12 @@ class Solution {
         // DP compute
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < m + 1; j++) {
-                int left = d[i - 1][j] + 1;
-                int down = d[i][j - 1] + 1;
+                int down = d[i - 1][j] + 1;
+                int left = d[i][j - 1] + 1;
                 int left_down = d[i - 1][j - 1];
                 if (word1.charAt(i - 1) != word2.charAt(j - 1))
                     left_down += 1;
                 d[i][j] = Math.min(left, Math.min(down, left_down));
-
             }
         }
         return d[n][m];
