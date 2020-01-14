@@ -18,8 +18,8 @@ class Solution {
         max[0] = A[0];
         int[] min = new int[n];
         min[0] = A[0];
-         int maxhere = 0;
-         int minhere = 0;
+//         int maxhere = 0;
+//         int minhere = 0;
          int res = Integer.MIN_VALUE;
         for (int i = 1; i < n; i++) {
             max[i] = Math.max(A[i], Math.max(max[i - 1] * A[i], min[i - 1] * A[i]));
@@ -43,7 +43,7 @@ class Solution{
             max = Math.max(nums[i], maxtemp);
             min = Math.min(nums[i], mintemp);
             maxres = Math.max(max, maxres);
-         }
+        }
         return maxres;
     }
 }

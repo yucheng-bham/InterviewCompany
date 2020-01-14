@@ -12,7 +12,14 @@ import java.util.Map;
 public class ArithmeticSlicesII_Subsequence {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] arr = {1, 1, 2, 3, 4};
+//        int[] arr = {1, 1, 2, 3, 4}; // ans = 5;
+//        int[] arr = {1, 7, 2, 3, 4}; // ans = 3;
+//        int[] arr = {1, 1, 1, 2}; // ans = 1;
+        int[] arr = {1, 1, 1, 1, 2}; // ans = 5;
+//        int[] arr = {1, 1, 1, 1, 1, 2}; // ans = 16;
+
+
+
         int i = solution.numberOfArithmeticSlices(arr);
         System.out.println(i);
     }
