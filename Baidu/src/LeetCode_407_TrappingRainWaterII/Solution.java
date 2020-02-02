@@ -52,7 +52,7 @@ class Solution {
             minheap.add(new Cell(m - 1, i, heights[m - 1][i]));
         }
         int res = 0;
-        int[][] dirs = {{-1, 0}, {0, 1}, {1, 0}, {-1, 0}};
+        int[][] dirs = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
         while (!minheap.isEmpty()) {
             Cell cur = minheap.poll();
             for (int[] dir: dirs) {
