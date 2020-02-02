@@ -1,4 +1,4 @@
-package LintCode32MinimumWindowSubstring;
+package LintCode.LintCode32MinimumWindowSubstring;
 
 /**
  * The class is

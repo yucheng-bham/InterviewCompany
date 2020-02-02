@@ -1,4 +1,4 @@
-package LintCode1406_MSSS;
+package LintCode.LintCode1406_MSSS;
 
 /**
  * The class is
