@@ -10,8 +10,11 @@ import java.util.*;
  */
 public class SortTest {
     public static void main(String[] args) {
-        /* list 可以使用两种方式来实现排序，一是list.sort(cmp)二是Collections.sort(list,cmp).
-        对于（2）来说，collections.sort(list) 就是排序，类似Arrays.sort(arr)从小到大
+        /* list 可以使用两种方式来实现排序，
+        一是list.sort(cmp)
+        二是Collections.sort(list,cmp).
+        对于（2）来说，collections.sort(list) 就是排序，
+        类似Arrays.sort(arr)从小到大
 
          */
         List<Integer> list = new ArrayList<>();
