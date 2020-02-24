@@ -14,7 +14,7 @@ public class SortTest {
         对于（2）来说，collections.sort(list) 就是排序，类似Arrays.sort(arr)从小到大
 
          */
-        /*List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(7);
         list.add(2);
@@ -28,25 +28,30 @@ public class SortTest {
             }
         });
         System.out.println(list);
-        list.sort(new Comparator<Integer>(){
+        /*list.sort(new Comparator<Integer>(){
             @Override
             public int compare(Integer a, Integer b) {
                 return b - a;
             }
-        });
+        });*/
+        list.sort(Collections.reverseOrder());
         System.out.println(list);
+
         // collections.sort()
-        Collections.sort(list);
+        /*Collections.sort(list);
         System.out.println(list);
-        Collections.sort(list, new Comparator<Integer>(){
+        *//*Collections.sort(list, new Comparator<Integer>() {
             @Override
             public int compare(Integer a, Integer b) {
                 return b - a;
             }
         });
+        System.out.println(list);*//*
+        Comparator<Object> objectComparator = Collections.reverseOrder();
+        Collections.sort(list, Collections.reverseOrder());
         System.out.println(list);*/
         // Arrays 只能sort包装类和类，对于基本数据类型是不能sort倒叙的
-        Integer[] arr = new Integer[10];
+        /*Integer[] arr = new Integer[10];
         Random rad = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = rad.nextInt(arr.length);
@@ -60,6 +65,6 @@ public class SortTest {
                 return b - a;
             }
         });
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));*/
     }
 }
