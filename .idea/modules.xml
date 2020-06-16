@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/ByteDance/ByteDance.iml" filepath="$PROJECT_DIR$/ByteDance/ByteDance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Huawei/Huawei.iml" filepath="$PROJECT_DIR$/Huawei/Huawei.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterviewCompany.iml" filepath="$PROJECT_DIR$/InterviewCompany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NowCoder/NowCoder.iml" filepath="$PROJECT_DIR$/NowCoder/NowCoder.iml" />
     </modules>
   </component>
 </project>
