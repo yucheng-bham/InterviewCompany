@@ -33,6 +33,7 @@ public class LeetCode_440 {
     public static void main(String[] args) {
         Solution sol = new Solution();
 //        System.out.println(sol.findKthNumber(124, 5));
-        System.out.println(sol.findKthNumber(125, 13));
+        System.out.println(sol.findKthNumber(13, 7));
+        // [1,  10, 11, 12, 13,     2, 3, 4, 5, 6, 7, 8, 9]
     }
 }
